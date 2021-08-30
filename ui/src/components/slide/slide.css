@@ -1,0 +1,38 @@
+.tag {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 15em;
+    /* font-size: 1.3em; */
+    border-radius: 0.5em;
+    padding: 0.3em;
+    margin: 0.5em;
+    background-color: #fff;
+    box-shadow: 0.3em 0.3em 0.2em rgb(233, 236, 236);
+}
+
+.tag-left {
+    display: flex;
+    flex-flow: column;
+}
+.tag-right {
+    margin-top: 2em;
+    margin-right: 1em;
+    color: #dedee6;
+}
+
+.slide-title {
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: none;
+    position: absolute;
+    bottom: 2em;
+    left: 0.5em;
+    /* z-index: 1; */
+}
+
+img {
+    /* width: min-content; */
+    width: 100%;
+}
