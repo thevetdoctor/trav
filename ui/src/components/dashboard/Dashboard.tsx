@@ -1,4 +1,4 @@
-/* eslint-disable array-callback-return */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, Fragment } from 'react'
 import Search from '../search/Search';
 import Slide from '../slide/Slide';

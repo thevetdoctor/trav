@@ -15,6 +15,5 @@ export default function reducer(state= initialState, action:IAction) {
 };
  
 export const initialState = {
-    // repoData: JSON.parse(localStorage.getItem('repo')) || [],
     data: [],
 };
