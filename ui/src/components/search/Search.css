@@ -12,26 +12,22 @@
   
   .search-bar {
     display: flex;
-    /* background-color: dodgerblue; */
     background-color: #fff;
     border-radius: 0.5em;
+    align-self: right;
   }
   
   .search-input {
-    /* background-color: dodgerblue; */
     height: 12px;
     padding: 10px;
     border: none;
     width: 100%;
     outline: none;
-    /* border-radius: 5px; */
   }
 
   .search-icon {
     padding: 5px;
-    /* height: 22px !important; */
     background-color: #fff;
-    /* border-radius:  0 5px 5px 0; */
     cursor: pointer;
   }
 
@@ -56,7 +52,6 @@
     flex-flow: column;
     margin-top: 430px;
     margin-left: -140px;
-    /* position: relative; */
   }
   
   .search-items {

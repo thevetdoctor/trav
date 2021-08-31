@@ -33,27 +33,28 @@ export default function Dashboard() {
                 });
               console.log(res?.data.Items);
               setInstitutions(res.data.Items);
+              setResults(res.data.Items);
               setLoading(false);
         }   catch(e) {
             setLoading(false);
             }
       }
+      useEffect(() => {
+          searchData();
+          return () => {};
+      },[query]);
       
     useEffect(() => {
         fetchData();
         return () => {};
     },[]);
  
-    useEffect(() => {
-        searchData();
-        return () => {};
-    },[query]);
 
     return (
         <div className='dashboard'>
             <div className='logo'>
                 <span><IoAirplane size='1.5em' /></span>
-                <h2>Trav4College</h2>
+                <h2><b>Trav4College</b></h2>
                 <span><MdAccountBalance size='1.5em' /></span>
             </div>
             <div className='top-content'>
@@ -87,20 +88,6 @@ export default function Dashboard() {
                 width={40} 
             />
             </Fragment>}
-
-                    {/* {results.length ?
-                    results.map(({title, image}:ISlide, idx:number) => (
-                        <Slide 
-                            key={idx} 
-                            title={title} 
-                            image={image}
-                        />
-                    ))
-                    :
-                    <Fragment>
-                        <span className='empty-search'>We are constantly updating our records, please check again later</span>
-                    </Fragment>
-                    } */}
             </div>
         </div>
     )

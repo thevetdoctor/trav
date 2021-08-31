@@ -8,7 +8,7 @@ export default function Search(props: any) {
     return (
         <div className="search">
             <div className='search-bar'>
-                <MdSearch size='1.5em' className="search-icon" />
+                <span><MdSearch size='1.5em' className="search-icon" /></span>
                 <input
                     className="search-input" 
                     type="text"
