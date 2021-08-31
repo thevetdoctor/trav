@@ -5,7 +5,7 @@
   background-color: #faf8f8;
   background-color: #dee3e6;
   height: 100%;
-  /* width: 100vw; */
+  width: 100vw;
 }
 
 @media screen and (max-width: 600px) {
