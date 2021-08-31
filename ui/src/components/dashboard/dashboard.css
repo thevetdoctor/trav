@@ -13,7 +13,7 @@
   .top-content {
     display: flex;
     justify-content: space-between;
-    width: 130%;
+    width: 100%;
     margin-bottom: 1em;
   }
   .logo {
