@@ -5,11 +5,14 @@ export interface ISlide {
 }
 
 export interface IAction {
+    payload: any;
     type: string,
-    data: {}
 }
 
 export interface IReducer {
-    data: [], 
-    action: IAction
+    (state: IState, action: IAction): IState
+}
+
+export interface IState {
+    data: [] | ISlide[];
 }

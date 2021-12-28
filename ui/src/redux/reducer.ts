@@ -1,19 +1,19 @@
 import actions from "./actions";
-import { IAction } from '../components/types'
+import { IAction, IState } from '../components/types'
 
-export default function reducer(state= initialState, action:IAction) {
+export default function reducer(state:IState = initialState, action:IAction) {
     switch(action.type) {         
         case actions.setData.type:
             console.log('Set institution data');
             return {
-                ...state, data: action.data
+                ...state, data: action.payload
             };
 
-        default:
+        default: 
         return state; 
     }
 };
  
-export const initialState = {
+export const initialState:IState = {
     data: [],
 };
